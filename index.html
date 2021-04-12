@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
             <input type="search" name="search" class="input-search" placeholder="Search">
             <button type="submit" class="button-search">
                 <svg class="icon icon-search" width="19" height="19">
-                    <use xlink:href="img/svg/icons.svg#search"></use>
+                    <use href="img/svg/icons.svg#search"></use>
                 </svg>
             </button>
         </div>
@@ -33,17 +34,17 @@
         <div class="icons">
             <a href="#" class="icons-link">
                 <svg class="icon icon-video" width="27" height="20">
-                    <use xlink:href="img/svg/icons.svg#video"></use>
+                    <use href="img/svg/icons.svg#video"></use>
                 </svg>
             </a>
             <a href="#" class="icons-link">
                 <svg class="icon icon-shape" width="21" height="21">
-                    <use xlink:href="img/svg/icons.svg#shape"></use>
+                    <use href="img/svg/icons.svg#shape"></use>
                 </svg>
             </a>
             <a href="#" class="icons-link">
                 <svg class="icon icon-notification" width="22" height="26">
-                    <use xlink:href="img/svg/icons.svg#notification"></use>
+                    <use href="img/svg/icons.svg#notification"></use>
                 </svg>
             </a>
         </div>
@@ -63,7 +64,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-home" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#home"></use>
+                            <use href="img/svg/icons.svg#home"></use>
                         </svg>
                         <span class="nav-text">Home</span>
                         </a>
@@ -71,7 +72,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-trending" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#trending"></use>
+                            <use href="img/svg/icons.svg#trending"></use>
                         </svg>
                         <span class="nav-text">Trending</span>
                         </a>
@@ -79,7 +80,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-subscriptions" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#subscriptions"></use>
+                            <use href="img/svg/icons.svg#subscriptions"></use>
                         </svg>
                         <span class="nav-text">Subscriptions</span>
                         </a>
@@ -91,7 +92,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-library" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#library"></use>
+                            <use href="img/svg/icons.svg#library"></use>
                         </svg>
                         <span class="nav-text">Library</span>
                         </a>
@@ -99,7 +100,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-history" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#history"></use>
+                            <use href="img/svg/icons.svg#history"></use>
                         </svg>
                         <span class="nav-text">History</span>
                         </a>
@@ -107,7 +108,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-watch-later" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#watch-later"></use>
+                            <use href="img/svg/icons.svg#watch-later"></use>
                         </svg>
                         <span class="nav-text">Watch later</span>
                         </a>
@@ -115,7 +116,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-favourites" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#favourites"></use>
+                            <use href="img/svg/icons.svg#favourites"></use>
                         </svg>
                         <span class="nav-text">Favourites</span>
                         </a>
@@ -123,7 +124,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-likes" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#likes"></use>
+                            <use href="img/svg/icons.svg#likes"></use>
                         </svg>
                         <span class="nav-text">Laked video</span>
                         </a>
@@ -131,14 +132,14 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-music" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#music"></use>
+                            <use href="img/svg/icons.svg#music"></use>
                         </svg>
                         <span class="nav-text">Music</span>
                         </a>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                             <svg class="icon icon-games" width="20" height="19">
-                                <use xlink:href="img/svg/icons.svg#games"></use>
+                                <use href="img/svg/icons.svg#games"></use>
                             </svg>
                             <span class="nav-text">Games</span>
                             </a>
@@ -146,7 +147,7 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                             <svg class="icon icon-show-more" width="20" height="19">
-                                <use xlink:href="img/svg/icons.svg#show-more"></use>
+                                <use href="img/svg/icons.svg#show-more"></use>
                             </svg>
                             <span class="nav-text">Show more</span>
                             </a>
@@ -198,7 +199,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                         <svg class="icon icon-setting" width="20" height="19">
-                            <use xlink:href="img/svg/icons.svg#setting"></use>
+                            <use href="img/svg/icons.svg#setting"></use>
                         </svg>
                         <span class="nav-text">Setting</span>
                         </a>
@@ -206,7 +207,348 @@
                 </ul>    
 
         </aside>
+
+        <main class="content">
+            <div class="channel">
+                <a href="#" class="channel-title">
+                    <img src="img/belle.png" alt="Belle" class="channel-avatar">
+                    <span class="channel-text">Dollie Blair</span>
+                </a>
+                
+            <div class="channel-buttons">
+                <div class="channel-button channel-button-prev">
+                    <svg class="icon icon-left" width="28" height="28">
+                        <use href="img/svg/icons.svg#left"></use>
+                    </svg>
+                </div>
+                <div class="channel-button channel-button-next">
+                    <svg class="icon icon-right" width="28" height="28">
+                        <use href="img/svg/icons.svg#right"></use>
+                    </svg>
+                </div>
+            </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container channel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <div class="video-card">
+                                <div class="video-thumb">
+                                  <img src="img/thumb-1.png" alt="" class="thumbnail">
+                                  <span class="video-duration">4:15</span>
+                                </div>
+                              <h3 class="video-title">A Brief History Of Creation</h3>
+                                <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">80k views</span>
+                                    <span class="video-date">3 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                                </div>
+                            </div>
+                        </div>
+
+                      <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                              <img src="img/thumb-2.png" alt="" class="thumbnail">
+                              <span class="video-duration">8:00</span>
+                            </div>
+                          <h3 class="video-title">Selecting The Right Hotel</h3>
+                            <div class="video-info">
+                            <span class="video-counter">
+                                <span class="video-views">123k views</span>
+                                <span class="video-date">1 months ago</span>
+                            </span>
+                            <span class="video-channel">Dollie Blair</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                              <img src="img/thumb-3.png" alt="" class="thumbnail">
+                              <span class="video-duration">5:32</span>
+                            </div>
+                          <h3 class="video-title">Asteroids</h3>
+                            <div class="video-info">
+                            <span class="video-counter">
+                                <span class="video-views">43k views</span>
+                                <span class="video-date">12 days ago</span>
+                            </span>
+                            <span class="video-channel">Dollie Blair</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                              <img src="img/thumb-4.png" alt="" class="thumbnail">
+                              <span class="video-duration">6:40</span>
+                            </div>
+                          <h3 class="video-title">Telescopes 101</h3>
+                            <div class="video-info">
+                            <span class="video-counter">
+                                <span class="video-views">11k views</span>
+                                <span class="video-date"> 6 months ago</span>
+                            </span>
+                            <span class="video-channel">Dollie Blair</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                              <img src="img/thumb-5.png" alt="" class="thumbnail">
+                              <span class="video-duration">1:45</span>
+                            </div>
+                          <h3 class="video-title">Medical Care Is Just</h3>
+                            <div class="video-info">
+                            <span class="video-counter">
+                                <span class="video-views">18k views</span>
+                                <span class="video-date">2 days ago</span>
+                            </span>
+                            <span class="video-channel">Dollie Blair</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                              <img src="img/thumb-6.png" alt="" class="thumbnail">
+                              <span class="video-duration">2:12</span>
+                            </div>
+                          <h3 class="video-title">Moon Gazing</h3>
+                            <div class="video-info">
+                            <span class="video-counter">
+                                <span class="video-views">67k views</span>
+                                <span class="video-date">4 months ago</span>
+                            </span>
+                            <span class="video-channel">Dollie Blair</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--/.swiper-container-->
+            </div>
+            <!--/.channel-->
+
+            <div class="recommended">
+                <h3 class="recommended-title">Recommended</h3>
+
+                <div class="recommended-buttons">
+                    <div class="recommended-button recommended-button-prev">
+                        <svg class="icon icon-left" width="28" height="28">
+                            <use href="img/svg/icons.svg#left"></use>
+                        </svg>
+                    </div>
+                    <div class="recommended-button recommended-button-next">
+                        <svg class="icon icon-right" width="28" height="28">
+                            <use href="img/svg/icons.svg#right"></use>
+                        </svg>
+                    </div>
+                </div>
+         <!-- Slider main container -->
+        <div class="swiper-container recommended-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+                <div class="swiper-slide">
+                    <div class="rec-card">
+                        <div class="rec-thumb">
+                          <img src="img/rec-1.png" alt="" class="thumbnail-rec">
+                          <span class="rec-duration">3:40</span>
+                        </div>
+                      <h3 class="rec-title">Dude You Re Getting A Telescope</h3>
+                        <div class="rec-info">
+                        <span class="rec-counter">
+                            <span class="rec-views">34k views</span>
+                            <span class="rec-date">5 months ago</span>
+                        </span>
+                        <span class="rec-channel">Gussie French</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rec-card">
+                        <div class="rec-thumb">
+                          <img src="img/rec-2.png" alt="" class="thumbnail-rec">
+                          <span class="rec-duration">2:12</span>
+                        </div>
+                      <h3 class="rec-title">Moon Gazing</h3>
+                        <div class="rec-info">
+                        <span class="rec-counter">
+                            <span class="rec-views">54k views</span>
+                            <span class="rec-date">11 months ago</span>
+                        </span>
+                        <span class="rec-channel">Edward Osborne</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rec-card">
+                        <div class="rec-thumb">
+                          <img src="img/rec-3.png" alt="" class="thumbnail-rec">
+                          <span class="rec-duration">2:12</span>
+                        </div>
+                      <h3 class="rec-title">Moon Gazing</h3>
+                        <div class="rec-info">
+                        <span class="rec-counter">
+                            <span class="rec-views">125k views</span>
+                            <span class="rec-date">4 months ago</span>
+                        </span>
+                        <span class="rec-channel">Dollie Blair</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="rec-channel">
+                <div class="rec-channel-box">
+                <a href="#" class="rec-channel-title">
+                    <img src="img/avatar-1.png" alt="Belle" class="rec-channel-avatar">
+                    <span class="rec-channel-text">Food & Drink</span>
+                </a>
+                    <div class="rec-channel-info">Recommended channel for you</div>
+                </div>
+                
+            <div class="channel-buttons">
+                <div class="channel-button channel-button-prev">
+                    <svg class="icon icon-left" width="28" height="28">
+                        <use href="img/svg/icons.svg#left"></use>
+                    </svg>
+                </div>
+                <div class="channel-button channel-button-next">
+                    <svg class="icon icon-right" width="28" height="28">
+                        <use href="img/svg/icons.svg#right"></use>
+                    </svg>
+                </div>
+            </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container channel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <div class="rec-video-card">
+                                <div class="rec-video-thumb">
+                                  <img src="img/rec-channel-1.png" alt="" class="rec-thumbnail">
+                                  <span class="rec-video-duration">7:36</span>
+                                </div>
+                              <h3 class="rec-video-title">A Brief History Of Creation</h3>
+                                <div class="rec-video-info">
+                                <span class="rec-video-counter">
+                                    <span class="rec-video-views">80k views</span>
+                                    <span class="rec-video-date">3 days ago</span>
+                                </span>
+                                <span class="rec-video-channel">Food & Drink</span>
+                                </div>
+                            </div>
+                        </div>
+
+                      <div class="swiper-slide">
+                        <div class="rec-video-card">
+                            <div class="rec-video-thumb">
+                              <img src="img/rec-channel-2.png" alt="" class="rec-thumbnail">
+                              <span class="rec-video-duration">2:19</span>
+                            </div>
+                          <h3 class="rec-video-title">Selecting The Right Hotel</h3>
+                            <div class="rec-video-info">
+                            <span class="rec-video-counter">
+                                <span class="rec-video-views">123k views</span>
+                                <span class="rec-video-date">1 months ago</span>
+                            </span>
+                            <span class="rec-video-channel">Food & Drink</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="rec-video-card">
+                            <div class="rec-video-thumb">
+                              <img src="img/rec-channel-3.png" alt="" class="rec-thumbnail">
+                              <span class="rec-video-duration">9:05</span>
+                            </div>
+                          <h3 class="rec-video-title">Asteroids</h3>
+                            <div class="rec-video-info">
+                            <span class="rec-video-counter">
+                                <span class="rec-video-views">43k views</span>
+                                <span class="rec-video-date">12 days ago</span>
+                            </span>
+                            <span class="rec-video-channel">Food & Drink</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="rec-video-card">
+                            <div class="rec-video-thumb">
+                              <img src="img/rec-channel-4.png" alt="" class="rec-thumbnail">
+                              <span class="rec-video-duration">3:40</span>
+                            </div>
+                          <h3 class="rec-video-title">Telescopes 101</h3>
+                            <div class="rec-video-info">
+                            <span class="rec-video-counter">
+                                <span class="rec-video-views">11k views</span>
+                                <span class="rec-video-date"> 6 months ago</span>
+                            </span>
+                            <span class="rec-video-channel">Food & Drink</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="rec-video-card">
+                            <div class="rec-video-thumb">
+                              <img src="img/rec-channel-5.png" alt="" class="rec-thumbnail">
+                              <span class="video-duration">1:56</span>
+                            </div>
+                          <h3 class="rec-video-title">Medical Care Is Just</h3>
+                            <div class="rec-video-info">
+                            <span class="rec-video-counter">
+                                <span class="rec-video-views">18k views</span>
+                                <span class="rec-video-date">2 days ago</span>
+                            </span>
+                            <span class="rec-video-channel">Food & Drink</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="rec-video-card">
+                            <div class="rec-video-thumb">
+                              <img src="img/rec-channel-6.png" alt="" class="rec-thumbnail">
+                              <span class="rec-video-duration">4:15</span>
+                            </div>
+                          <h3 class="rec-video-title">Moon Gazing</h3>
+                            <div class="rec-video-info">
+                            <span class="rec-video-counter">
+                                <span class="rec-video-views">67k views</span>
+                                <span class="rec-video-date">4 months ago</span>
+                            </span>
+                            <span class="rec-video-channel">Food & Drink</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--/.swiper-container-->
+            </div>
+            <!--/.rec-channel-->
+
+        </main>
+
     </div>
     <!--container-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

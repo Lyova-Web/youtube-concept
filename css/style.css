@@ -16,6 +16,12 @@ body {
     padding-left: 32px;
     padding-right: 70px;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
 }
 
 .menu-button {
@@ -123,7 +129,21 @@ body {
 }
 
 .sidebar {
+    position: fixed;
+    left: 0;
+    top: 114px;
+    height: calc(100% - 114px);
+    overflow-y: auto;
+    width: 200px;
     padding-left: 32px;
+    background-color: #fff;
+}
+
+.content {
+    width: 100%;
+    margin-top: 85px;
+    padding-left: 250px;
+    padding-top: 25px;
 }
 
 .nav-menu {
@@ -172,4 +192,321 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+
+.channel {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.channel-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.channel-text {
+    margin-left: 20px;
+}
+
+.video-thumb {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    padding: 3px 9px;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.video-counter {
+    display: flex;
+}
+
+.video-views {
+    margin-right: 5px;
+}
+
+.video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.channel-button {
+    cursor: pointer;
+}
+
+.channel-buttons {
+    position: absolute;
+    right: 8%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+
+.rec-card {
+    width: 540px; 
+    margin-bottom: 50px;
+}
+
+.rec-thumb {
+    width: 540px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    position: relative;
+}
+
+.thumbnail-rec {
+    width: 540px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.rec-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    padding: 3px 9px;
+}
+
+.rec-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.rec-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.rec-counter {
+    display: flex;
+}
+
+.rec-views {
+    margin-right: 5px;
+}
+
+.rec-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.recommended-button {
+    cursor: pointer;
+}
+
+.recommended-buttons {
+    position: absolute;
+    right: 8%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+
+.rec-channel-box {
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    height: 100%;
+}
+
+.rec-channel {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.rec-channel-info {
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+
+.rec-channel-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.rec-channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.rec-channel-text {
+    margin-left: 20px;
+}
+
+.rec-video-thumb {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    position: relative;
+}
+
+.rec-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.rec-video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    padding: 3px 9px;
+}
+
+.rec-video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.rec-video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.rec-video-counter {
+    display: flex;
+}
+
+.rec-video-views {
+    margin-right: 5px;
+}
+
+.rec-video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
 }
